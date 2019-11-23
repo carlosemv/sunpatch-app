@@ -66,7 +66,6 @@ class BackgroundCollectingTask extends Model
     String req = "https://api.openweathermap.org/data/2.5/uvi?";
     req += "lat=${loc.latitude}&lon=${loc.longitude}";
     req += "&appid=${key}";
-    print(req);
     http.Response response = await http.get(req);
     var data = json.decode(response.body);
     currUVI = data["value"];
