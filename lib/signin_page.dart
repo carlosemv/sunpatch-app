@@ -173,7 +173,7 @@ class SignInPageState extends State<SignInPage> {
   void _signIn() async {
     FirebaseUser user;
     try {
-      if (false) {
+      if (widget.register) {
         user = (await auth.createUserWithEmailAndPassword(
           email: _emailController.text,
           password: _passwordController.text,
@@ -197,7 +197,9 @@ class SignInPageState extends State<SignInPage> {
 
       widget.signIn(user, widget.register);
     } else {
-      _success = false;
+      setState(() {
+        _success = false;
+      });
     }
   }
 }
