@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_bluetooth_serial (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `.symlinks/flutter/ios`)
+  - flutter_bluetooth_serial (from `.symlinks/plugins/flutter_bluetooth_serial/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: ".symlinks/flutter/ios"
+  flutter_bluetooth_serial:
+    :path: ".symlinks/plugins/flutter_bluetooth_serial/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 9d0fac939486c9aba2809b7982dfdbb47a7b0296
+  flutter_bluetooth_serial: 23333f09d2d0e5d1d99478a59f50764ada7af2ff
+
+PODFILE CHECKSUM: e8988baac3a50f787b9d3ed7ca44957b442f92a7
+
+COCOAPODS: 1.5.3

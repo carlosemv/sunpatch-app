@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "487155413512",
+    "firebase_url": "https://sunpatch-server.firebaseio.com",
+    "project_id": "sunpatch-server",
+    "storage_bucket": "sunpatch-server.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:487155413512:android:cf097e3f8b24d48f",
+        "android_client_info": {
+          "package_name": "com.example.sunpatch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "487155413512-v3m8l65ec1lhombsaa01c7r111q4qicu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_bkc5sBAEQ-6NKkAhRgToR46iTEXhAjI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "487155413512-v3m8l65ec1lhombsaa01c7r111q4qicu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

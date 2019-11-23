@@ -1,0 +1,44 @@
+name: sunpatch
+description: An app for tracking UV exposure
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  circular_chart:
+    path: ./my_circular_chart/
+  scoped_model:
+
+  firebase_core:
+  firebase_dynamic_links: ^0.3.0
+  google_sign_in:
+  uuid:
+  firebase_auth:
+  cloud_firestore:
+
+  http:
+  location:
+  geoflutterfire:
+
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_launcher_icons:
+
+flutter_icons:
+  android: true
+  image_path: "assets/launcher/launcher.png"
+  adaptive_icon_background: "assets/launcher/back.png"
+  adaptive_icon_foreground: "assets/launcher/front.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
