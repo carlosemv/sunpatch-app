@@ -36,7 +36,7 @@ class BackgroundCollectingTask extends Model
 
   void collectData() {
     var now = DateTime.now();
-    var data = currUVI * 0.025;
+    var data = currUVI * 0.25;
     final sample = DataSample(
       data: data,
       timestamp: now
