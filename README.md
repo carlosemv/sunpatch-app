@@ -1,16 +1,24 @@
-# sunpatch
+<img src="/assets/sunpatch.png" height="128">
 
-A new Flutter project.
+Sunpatch is a Flutter-based app for monitoring personal UV exposure.
 
-## Getting Started
+## How it works
 
-This project is a starting point for a Flutter application.
+On the main screen, the user can register, login to an existing account, or temporarily login as an anonymous user.
+Firebase is used for authentication as well as data storage.
 
-A few resources to get you started if this is your first Flutter project:
+As part of the registration process, the user must inform their Fitzpatrick skin phototype, which will be used in determining their maximum daily recommended exposure to UV radiation.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+<img src="https://i.ibb.co/Fg6h23c/home.png" alt="home" height="512"> <img src="https://i.ibb.co/tMhN0XT/register.png" alt="register" height="512"> <img src="https://i.ibb.co/HKYdZvh/skin.png" alt="skin" height="512">
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+After logging in, the user can opt to start monitoring UV radiation every time they are outside or in an otherwise sun-exposed situation.
+
+GPS data is used along with the [OpenWeather](https://openweathermap.org/) API to determine the current UVI (UV index) at the user's location. The UVI is used to calculate the amount of UV exposure over time, and while monitoring, this amount is accumulated and shown as a percentage of the maximum daily exposure recommended (as determined by the user's Fitzpatrick skin type).
+
+<img src="https://i.ibb.co/5ML92XR/monitoring1.png" alt="monitoring1" height="512"> <img src="https://i.ibb.co/3sT1Hyt/monitoring2.png" alt="monitoring2" height="512"> <img src="https://i.ibb.co/9h7ct75/monitoring3.png" alt="monitoring3" height="512">
+
+## Running the app
+
+To run or install the app, you'll first need to create the file `assets/api_key`, containing (only) a valid [OpenWeather](https://openweathermap.org/) API key.
+
+Build and run with [Flutter](https://github.com/flutter/flutter).
